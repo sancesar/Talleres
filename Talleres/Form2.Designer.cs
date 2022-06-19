@@ -49,8 +49,8 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.opcionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ingresarDatosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.verElementosGuardadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.verElementosEliminadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.Mnvg = new System.Windows.Forms.ToolStripMenuItem();
+            this.Mnve = new System.Windows.Forms.ToolStripMenuItem();
             this.autorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -194,25 +194,21 @@
             // 
             // Colced
             // 
-            this.Colced.DisplayIndex = 3;
             this.Colced.Text = "Cedula";
             this.Colced.Width = 100;
             // 
             // Colnom
             // 
-            this.Colnom.DisplayIndex = 0;
             this.Colnom.Text = "Nombre";
             this.Colnom.Width = 100;
             // 
             // Colape
             // 
-            this.Colape.DisplayIndex = 1;
             this.Colape.Text = "Apellido";
             this.Colape.Width = 100;
             // 
             // Colcar
             // 
-            this.Colcar.DisplayIndex = 2;
             this.Colcar.Text = "Carrera";
             this.Colcar.Width = 100;
             // 
@@ -233,8 +229,8 @@
             // 
             this.opcionesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ingresarDatosToolStripMenuItem,
-            this.verElementosGuardadosToolStripMenuItem,
-            this.verElementosEliminadosToolStripMenuItem});
+            this.Mnvg,
+            this.Mnve});
             this.opcionesToolStripMenuItem.Name = "opcionesToolStripMenuItem";
             this.opcionesToolStripMenuItem.Size = new System.Drawing.Size(85, 24);
             this.opcionesToolStripMenuItem.Text = "Opciones";
@@ -245,17 +241,19 @@
             this.ingresarDatosToolStripMenuItem.Size = new System.Drawing.Size(263, 26);
             this.ingresarDatosToolStripMenuItem.Text = "Ingresar datos";
             // 
-            // verElementosGuardadosToolStripMenuItem
+            // Mnvg
             // 
-            this.verElementosGuardadosToolStripMenuItem.Name = "verElementosGuardadosToolStripMenuItem";
-            this.verElementosGuardadosToolStripMenuItem.Size = new System.Drawing.Size(263, 26);
-            this.verElementosGuardadosToolStripMenuItem.Text = "Ver elementos guardados";
+            this.Mnvg.Name = "Mnvg";
+            this.Mnvg.Size = new System.Drawing.Size(263, 26);
+            this.Mnvg.Text = "Ver elementos guardados";
+            this.Mnvg.Click += new System.EventHandler(this.Mnvg_Click);
             // 
-            // verElementosEliminadosToolStripMenuItem
+            // Mnve
             // 
-            this.verElementosEliminadosToolStripMenuItem.Name = "verElementosEliminadosToolStripMenuItem";
-            this.verElementosEliminadosToolStripMenuItem.Size = new System.Drawing.Size(263, 26);
-            this.verElementosEliminadosToolStripMenuItem.Text = "Ver elementos eliminados";
+            this.Mnve.Name = "Mnve";
+            this.Mnve.Size = new System.Drawing.Size(263, 26);
+            this.Mnve.Text = "Ver elementos eliminados";
+            this.Mnve.DoubleClick += new System.EventHandler(this.Mnve_Click);
             // 
             // autorToolStripMenuItem
             // 
@@ -311,8 +309,8 @@
         private MenuStrip menuStrip1;
         private ToolStripMenuItem opcionesToolStripMenuItem;
         private ToolStripMenuItem ingresarDatosToolStripMenuItem;
-        private ToolStripMenuItem verElementosGuardadosToolStripMenuItem;
-        private ToolStripMenuItem verElementosEliminadosToolStripMenuItem;
+        private ToolStripMenuItem Mnvg;
+        private ToolStripMenuItem Mnve;
         private ToolStripMenuItem autorToolStripMenuItem;
     }
 }
