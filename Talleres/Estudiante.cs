@@ -17,14 +17,12 @@ namespace Talleres
             get { return carrera; }
             set { carrera = value; }
         }
-        public Estudiante(int cedula, string nombre, string apellido, string carrera) : base(cedula, nombre, apellido)
+        public Estudiante(string cedula, string nombre, string apellido, string carrera) : base(cedula, nombre, apellido)
         {
             this.carrera = carrera;
         }
 
         public Estudiante()
-        {
-
-        }
+        {}
     }
 }

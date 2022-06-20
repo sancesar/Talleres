@@ -10,9 +10,9 @@ namespace Talleres
 {
     public class Persona
     {
-        private int cedula;
+        private string cedula;
 
-        public int Cedula
+        public string Cedula
         {
             get { return cedula; }
             set { cedula = value; }
@@ -35,7 +35,7 @@ namespace Talleres
             set { apellido = value; }
         }
 
-        public Persona(int cedula, string nombre, string apellido)
+        public Persona(string cedula, string nombre, string apellido)
         {
             this.cedula = cedula;
             this.nombre = nombre;
